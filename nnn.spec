@@ -42,7 +42,7 @@ Cool things you can do with nnn:
 %{_mandir}/man1/%{name}.1.*
 %dir %{_datadir}/bash-completion
 %dir %{_datadir}/bash-completion/completions
-%{_datadir}/bash-completion/completions/nnn-completion.bash
+#{_datadir}/bash-completion/completions/nnn-completion.bash
 %dir %{_datadir}/fish/vendor_functions.d
 %{_datadir}/fish/vendor_functions.d/nnn.fish
 %dir %{_datadir}/zsh/site-functions
@@ -61,8 +61,8 @@ sed -i "s|^install: all|install:|" Makefile
 
 %install
 %makeinstall_std PREFIX=%{_prefix}
-install -Dpm0644 -t %{buildroot}%{_datadir}/bash-completion/completions \
-  scripts/auto-completion/bash/nnn-completion.bash
+#install -Dpm0644 -t %{buildroot}%{_datadir}/bash-completion/completions \
+#  scripts/auto-completion/bash/nnn-completion.bash
 install -Dpm0644 -t %{buildroot}%{_datadir}/fish/vendor_functions.d \
   scripts/auto-completion/fish/nnn.fish
 install -Dpm0644 -t %{buildroot}%{_datadir}/zsh/site-functions \
