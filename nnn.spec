@@ -40,8 +40,8 @@ Cool things you can do with nnn:
 %doc CHANGELOG README.md LICENSE
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.*
-%dir %{_datadir}/bash-completion
-%dir %{_datadir}/bash-completion/completions
+#dir #{_datadir}/bash-completion
+#dir #{_datadir}/bash-completion/completions
 #{_datadir}/bash-completion/completions/nnn-completion.bash
 #dir #{_datadir}/fish/vendor_functions.d
 #{_datadir}/fish/vendor_functions.d/nnn.fish
