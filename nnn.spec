@@ -45,8 +45,8 @@ Cool things you can do with nnn:
 #{_datadir}/bash-completion/completions/nnn-completion.bash
 #dir #{_datadir}/fish/vendor_functions.d
 #{_datadir}/fish/vendor_functions.d/nnn.fish
-%dir %{_datadir}/zsh/site-functions
-%{_datadir}/zsh/site-functions/_nnn
+#dir %{_datadir}/zsh/site-functions
+#{_datadir}/zsh/site-functions/_nnn
 #----------------------------------------------------
 
 %prep
@@ -65,7 +65,7 @@ sed -i "s|^install: all|install:|" Makefile
 #  scripts/auto-completion/bash/nnn-completion.bash
 #install -Dpm0644 -t %{buildroot}%{_datadir}/fish/vendor_functions.d \
 # scripts/auto-completion/fish/nnn.fish
-install -Dpm0644 -t %{buildroot}%{_datadir}/zsh/site-functions \
-  scripts/auto-completion/zsh/_nnn
+#install -Dpm0644 -t %{buildroot}%{_datadir}/zsh/site-functions \
+#  scripts/auto-completion/zsh/_nnn
 
 
