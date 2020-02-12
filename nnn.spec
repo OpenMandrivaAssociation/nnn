@@ -1,5 +1,5 @@
 Name:       nnn
-Version:	2.9
+Version:	3.0
 Release:	1
 Summary:    The missing terminal file browser for X
 Group:      File tools
@@ -56,11 +56,11 @@ sed -i "s|^install: all|install:|" Makefile
 
 %build
 %setup_compile_flags
-%make STRIP=/bin/true
+%make_build STRIP=/bin/true
 
 
 %install
-%makeinstall_std PREFIX=%{_prefix}
+%make_install PREFIX=%{_prefix}
 #install -Dpm0644 -t %{buildroot}%{_datadir}/bash-completion/completions \
 #  scripts/auto-completion/bash/nnn-completion.bash
 #install -Dpm0644 -t %{buildroot}%{_datadir}/fish/vendor_functions.d \
