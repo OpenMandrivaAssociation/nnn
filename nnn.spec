@@ -1,6 +1,6 @@
 Name:       nnn
-Version:	3.0
-Release:	1
+Version:    3.1
+Release:    1
 Summary:    The missing terminal file browser for X
 Group:      File tools
 License:    BSD
