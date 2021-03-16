@@ -1,5 +1,5 @@
 Name:       nnn
-Version:	3.5
+Version:	3.6
 Release:	1
 Summary:    The missing terminal file browser for X
 Group:      File tools
